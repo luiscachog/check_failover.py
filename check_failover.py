@@ -3,7 +3,7 @@
 
 
 __author__ = "Luis Alberto Cacho"
-__copyright__ = "Copyright 2012, CookieLabs"
+__copyright__ = "Copyright (C) 2012, CookieLabs www."
 __credits__ = ["Luis Alberto Cacho"]
 __license__ = "GPL"
 __maintainer__ = "Luis Alberto Cacho"
@@ -17,7 +17,6 @@ __date__ = "01/06/2012"
 FILE		: check_failover.py
 USAGE		: ./check_failover.py
 DESCRIPTION	: Nagios plugin to check status for each of the Red Hat cluster services.
-
 OPTION(S)	: -i / --init & -v / --version & -h / --help
 REQUIREMENTS	: RedHat cluster. Tested with clustat 2.0.52
 BUGS		: Search for XXX in the script.
@@ -42,7 +41,6 @@ STATE_DEPENDENT = 4
 #=================##
 # Global variables #
 #=================##
-VERSION = "1.0.1"
 DATA_FILE = '/usr/local/nagios/var/failover'
 FAILOVER_COUNT_FILE = ''
 STATUS_COUNT_FILE = ''
@@ -59,17 +57,16 @@ MSG=" "
 # Functions #
 #===========#
 def usage():
-	print 'check_failover.py version %s' % (VERSION)
-	print 'This is a Nagios check to see if each of Red Hat cluster services has moved to another node.'
-	print '''
-Copyright (C) 2012  Cookielabs www.cookielabs.net
+	print 'check_failover.py version %s' % (__version__)
+	print 'This is a Nagios check to check status for each of Red Hat cluster services.'
+	print ''' %s
 
 Usage : check_failover.py
 
 Options: -i / --init	-- Initialize for first run or use to re-initialize.
 	 -h / --help	-- Displays this help message.
 	 -v / --version	-- Displays version.
-'''
+''' % (__copyright__)
 	sys.exit(STATE_OK)
 
 
@@ -181,7 +178,7 @@ for a in options[:]:
 		usage()
 for a in options[:]:
 	if a[0] == '-v' or a[0] == '--version':
-		print 'check_failover.py version %s' % (VERSION)
+		print 'check_failover.py version %s' % (__version__)
 		sys.exit(STATE_OK)
 
 if len(argument) != 0:
