@@ -15,11 +15,8 @@ COMPANY         : CookieLabs
 VERSION         : 1.0.1
 CREATED         : 01/06/2012
 
-
 __author__ = "Luis Alberto Cacho"
-__copyright__ = "Copyright (C) 2012, CookieLabs www."
-__credits__ = ["Luis Alberto Cacho"]
-__license__ = "GPL"
+__copyright__ = "Copyright (C) 2012, CookieLabs www."__license__ = "GPL"
 __maintainer__ = "Luis Alberto Cacho"
 __email__ = "lcacho@cookielabs.net"
 __status__ = "Production"
