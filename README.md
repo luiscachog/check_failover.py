@@ -11,6 +11,7 @@ USAGE           : ./check_failover.py
 
 
 DESCRIPTION     : Nagios plugin to check status for each of the Red Hat cluster services.
+
 OPTION(S)       : -i / --init & -v / --version & -h / --help
 REQUIREMENTS    : RedHat cluster. Tested with clustat 2.0.52
 BUGS            : Search for XXX in the script.
