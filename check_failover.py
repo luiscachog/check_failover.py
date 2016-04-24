@@ -58,7 +58,7 @@ MSG=" "
 #===========#
 def usage():
 	print 'check_failover.py version %s' % (__version__)
-	print 'This is a Nagios check to check status for each of Red Hat cluster services.'
+	print 'This is a Nagios script to check status for each of Red Hat cluster services.'
 	print ''' %s
 
 Usage : check_failover.py
