@@ -23,7 +23,9 @@ CREATED         : 01/06/2012
 
 
 __author__ = "Luis Alberto Cacho"
+
 __copyright__ = "Copyright (C) 2012, CookieLabs www."
+
 __credits__ = ["Luis Alberto Cacho"]
 __license__ = "GPL"
 __maintainer__ = "Luis Alberto Cacho"
